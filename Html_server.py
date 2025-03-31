@@ -32,8 +32,8 @@ async def generate_html_report(messages: str,) -> Dict:
     # 调用大模型
     try:
         client = OpenAI(
-            api_key='sk-quBjWaFrfCyP8NFp75Bd90C46e96425a8756545dC5Ee386f',
-            base_url="https://api.gptplus5.com/v1"
+            api_key='',
+            base_url=""
         )
 
         response = client.chat.completions.create(
@@ -101,4 +101,4 @@ def _postprocess_html(raw_html: str) -> str:
 
 if __name__ == "__main__":
     # 启动服务器（支持多种传输方式）
-    mcp.run(transport='stdio')  # 也可以使用 'websocket' 或 'http'
+    mcp.run(transport='stdio')  
