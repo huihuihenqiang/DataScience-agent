@@ -4,7 +4,7 @@
 
 DataScience-mg-agent通过Graphrag检索人类优秀案例，辅助agent回答问题。同时，本agent还配有联网搜索、本地知识库搜索、本地文件操作、sql处理、自动python代码生成与执行、试验报告生成等功能。将过去agent代码生成,人类debug的模式改变为从开发阶段开始就由agent自己规划策略、自己使用工具、自己执行代码、自己总结报告的全新模式，从而显着降低了人类的工作量，解放双手。同时，最后我们还对agnet的成功案例进行了评估。
 
-## GraphRag/mcp
+## GraphRag/MCP
 GraphRag适合用在总结性问题上，kaggle上问题都是复杂的系统性问题，与garphrag天然适配。MCP，全称是Model Context Protocol，模型上下文协议，由Claude母公司Anthropic于去年11月正式提出。下图是案例库的知识图谱图：
 
 ![图片](https://github.com/user-attachments/assets/a70918e7-2b52-4bfb-a103-719a3e56c3d5)
@@ -19,7 +19,29 @@ We provide an overall pipeline in train.py. Now fill in the provided train.py sc
 ```
 ### 部分日志
 ```txt
-
+2025-03-31 17:08:49 - INFO - 可用工具:
+2025-03-31 17:08:49 - INFO - - SQLServer_sql_inter
+2025-03-31 17:08:49 - INFO - - PythonServer_python_inter
+2025-03-31 17:08:49 - INFO - - WebSearch_web_search
+2025-03-31 17:08:49 - INFO - - Rag_ML_rag_ML
+2025-03-31 17:08:49 - INFO - - FileReaderServer_read_question_files
+2025-03-31 17:09:15 - INFO - 
+[Step 9] LLM响应
+2025-03-31 17:09:15 - INFO - 响应ID: chatcmpl-BH5Qmkv93UIt5PMuXgsBNXsiGZia9
+2025-03-31 17:09:15 - INFO - 模型: gpt-4o-2024-08-06
+2025-03-31 17:09:15 - INFO - 完成原因: tool_calls
+2025-03-31 17:09:15 - INFO - 工具调用:
+2025-03-31 17:09:15 - INFO - - ID: call_T0Myxbglv1M8x04ZPHeHQOob
+2025-03-31 17:09:15 - INFO -   工具: Rag_ML_rag_ML
+2025-03-31 17:09:15 - INFO -   参数: {"query": "advanced techniques in binary classification to improve AUROC"}
+2025-03-31 17:09:15 - INFO - - ID: call_1jyBR0HawdEsUBcXRF2cxoeZ
+2025-03-31 17:09:15 - INFO -   工具: WebSearch_web_search
+2025-03-31 17:09:15 - INFO -   参数: {"query": "Python code for binary classification to maximize AUROC", "max_results": 5}
+2025-03-31 17:09:15 - INFO - [Step 10] 调用工具请求
+2025-03-31 17:09:15 - INFO - 工具名称: Rag_ML_rag_ML
+2025-03-31 17:09:15 - INFO - 工具参数: {
+  "query": "advanced techniques in binary classification to improve AUROC"
+}
 
 ```
 ### 报告总结
