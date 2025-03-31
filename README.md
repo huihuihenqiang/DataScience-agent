@@ -17,6 +17,11 @@ The dataset presented here (the Software Defects Dataset) comprises a lot of num
 We provide an overall pipeline in train.py. Now fill in the provided train.py script to train a binary classification model to get a good performance on this task.
 
 ```
+### 部分日志
+```txt
+
+
+```
 ### 报告总结
 [生成的文件](https://huihuihenqiang.github.io/article/THPML%20book/report.html)
 
