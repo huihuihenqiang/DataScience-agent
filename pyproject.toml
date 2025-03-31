@@ -1,0 +1,22 @@
+[project]
+name = "datas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "duckduckgo-search>=7.5.5",
+    "fastapi>=0.115.12",
+    "graphrag>=2.1.0",
+    "huggingface>=0.0.1",
+    "joblib>=1.4.2",
+    "matplotlib>=3.10.1",
+    "mcp>=1.6.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "pathlib>=1.0.1",
+    "requests>=2.32.3",
+    "scikit-learn>=1.6.1",
+    "torch>=2.6.0",
+]
