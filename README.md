@@ -1,6 +1,6 @@
 # DataScience-agent
 ## 基于mcp和garphrag制作的kaggle data science agent
-尽管基于大型语言模型 （LLM） 的agent在自动化数据科学任务方面取得了广泛的成功，以 ![DS-Agent](https://github.com/guosyjlu/DS-Agent)为例，它利用了 LLM agent和基于案例的推理 （CBR），可以灵活地利用 Kaggle 的专业知识，并通过反馈机制促进持续的性能改进。但是，仍然需要人类处理大部分工作（数据提取、数据清洗、网络搜索方法...），agent只负责生成对应的代码。由于，最近agent技术取得了很大的突破，使用mcp和graphrag制作数据科学自动处理的工作流成为可能。
+尽管基于大型语言模型 （LLM） 的agent在自动化数据科学任务方面取得了广泛的成功，以 ![DS-Agent](https://github.com/guosyjlu/DS-Agent)为例，它利用了 LLM agent和基于案例的推理 （CBR），可以灵活地利用 Kaggle 的专业知识，并通过反馈机制促进持续的性能改进。但是，仍然需要人类处理大部分工作（数据提取、数据清洗、网络搜索方法...），agent只负责生成对应的代码。由于最近agent技术取得的巨大的突破，使用mcp和graphrag制作数据科学自动处理的工作流成为可能。
 
 DataScience-mg-agent通过Graphrag检索人类优秀案例，辅助agent回答问题。同时，本agent还配有联网搜索、本地知识库搜索、本地文件操作、sql处理、自动python代码生成与执行、试验报告生成等功能。将过去agent代码生成,人类debug的模式改变为从开发阶段开始就由agent自己规划策略、自己使用工具、自己执行代码、自己总结报告的全新模式，从而显着降低了人类的工作量，解放双手。同时，最后我们还对agnet的成功案例进行了评估。
 
