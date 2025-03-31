@@ -5,7 +5,7 @@
 DataScience-mg-agent通过Graphrag检索人类优秀案例，辅助agent回答问题。同时，本agent还配有联网搜索、本地知识库搜索、本地文件操作、sql处理、自动python代码生成与执行、试验报告生成等功能。将过去agent代码生成,人类debug的模式改变为从开发阶段开始就由agent自己规划策略、自己使用工具、自己执行代码、自己总结报告的全新模式，从而显着降低了人类的工作量，解放双手。同时，最后我们还对agnet的成功案例进行了评估。
 
 ## GraphRag/mcp
-GraphRag适合用在总结性问题上，解决一个大的系统性问题与garphrag天然适配。MCP，全称是Model Context Protocol，模型上下文协议，由Claude母公司Anthropic于去年11月正式提出。下图是案例库的知识图谱图：
+GraphRag适合用在总结性问题上，kaggle上问题都是复杂的系统性问题，与garphrag天然适配。MCP，全称是Model Context Protocol，模型上下文协议，由Claude母公司Anthropic于去年11月正式提出。下图是案例库的知识图谱图：
 
 ![图片](https://github.com/user-attachments/assets/a70918e7-2b52-4bfb-a103-719a3e56c3d5)
 
