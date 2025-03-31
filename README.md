@@ -38,7 +38,7 @@ We provide an overall pipeline in train.py. Now fill in the provided train.py sc
 
 
 Cite：本项目的所有数据集，包括benchmark和cbr中的案例都来自于以下的论文。
-
+```txt
 @InProceedings{DS-Agent,
   title = 	 {{DS}-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning},
   author =       {Guo, Siyuan and Deng, Cheng and Wen, Ying and Chen, Hechang and Chang, Yi and Wang, Jun},
@@ -49,3 +49,4 @@ Cite：本项目的所有数据集，包括benchmark和cbr中的案例都来自�
   series = 	 {Proceedings of Machine Learning Research},
   publisher =    {PMLR}
 }
+```
