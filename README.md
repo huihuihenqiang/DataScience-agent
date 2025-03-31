@@ -1,19 +1,30 @@
 # DataScience-agent
-基于mcp和garphrag制作的kaggle data science agent
+## 基于mcp和garphrag制作的kaggle data science agent
+尽管基于大型语言模型 （LLM） 的代理在自动化数据科学任务方面取得了广泛的成功，以 ![DS-Agent](https://github.com/guosyjlu/DS-Agent)为例，它利用了 LLM 代理和基于案例的推理 （CBR），可以灵活地利用 Kaggle 的专业知识，并通过反馈机制促进持续的性能改进。但是，仍然需要人类处理大部分工作，agent只负责生成对应的代码。由于，最近agent技术取得了很大的突破，使用mcp和graphrag制作数据科学自动处理的工作流成为可能。
 
-尽管基于大型语言模型 （LLM） 的代理在自动化数据科学任务方面取得了广泛的成功，以 ![DS-Agent]()为例，它利用了 LLM 代理和基于案例的推理 （CBR），可以灵活地利用 Kaggle 的专业知识，并通过反馈机制促进持续的性能改进。但是，仍然需要人类处理大部分工作，agent只负责生成对应的代码。由于，最近此外，DS-Agent 通过简化的 CBR 范式实现了低资源部署阶段，以将过去从开发阶段开始的成功解决方案改编为直接代码生成，从而显着降低了对 LLM 基础功能的需求。根据经验，带有 GPT-4 的 DS-Agent 在开发阶段实现了 100% 的成功率，同时在部署阶段与其他 LLM 相比，平均一次通过率提高了 36%。在这两个阶段，DS-Agent 在性能方面都取得了最佳排名，使用 GPT-1.60 每次运行的成本分别为 0.13 USD 和 4 USD。我们的数据和代码在 https：//github.com/guosyjlu/DS-Agent 上开源。
+DataScience-mg-agent通过Graphrag检索人类优秀案例，辅助agent回答问题。同时，本agent还配有联网搜索、本地知识库搜索、本地文件操作、sql处理、自动python代码生成与执行、试验报告生成等功能。将过去agent代码生成,人类debug的模式改变为从开发阶段开始就由agent自己规划策略、自己使用工具、自己执行代码、自己总结报告的全新模式，从而显着降低了人类的工作量，解放双手。同时，最后我们还对agnet的成功案例进行了评估。
 
+## GraphRag/mcp
+GraphRag适合用在总结性问题上，
 
+![图片](https://github.com/user-attachments/assets/a70918e7-2b52-4bfb-a103-719a3e56c3d5)
+
+## example
+### 题目
+```txt
+You are solving this data science tasks of binary classification: 
+The dataset presented here (the Software Defects Dataset) comprises a lot of numerical features. We have splitted the dataset into three parts of train, valid and test. Your task is to predict the defects item, which is a binary label with 0 and 1. The evaluation metric is the area under ROC curve (AUROC).
+We provide an overall pipeline in train.py. Now fill in the provided train.py script to train a binary classification model to get a good performance on this task.
+
+```
+### 报告总结
 ![生成的文件](https://huihuihenqiang.github.io/article/THPML%20book/report.html)
 
 
-
-
+##
 评估 我们选择了 30 个数据科学任务，具有三种数据模态，包括文本、时间序列和表格数据，以及回归和分类两种基本任务类型。 评估指标。我们主要从三个方面来评价智能体的能力： （1） 完成构建 ML 模型。我们采用成功率，即代理是否能在固定的步骤数内以无错误的方式构建 ML 模型。 （2） 构建的 ML 模型的性能。我们使用最佳排名作为评估指标来评估代理的自动化数据科学能力。 （3） 资源成本。由于我们在这项工作中主要使用闭源 LLM，因此我们将消耗的资金用于评估资源成本。 
 
-graphrag
 
-![图片](https://github.com/user-attachments/assets/a70918e7-2b52-4bfb-a103-719a3e56c3d5)
 
 
 ![屏幕截图 2025-03-31 173832](https://github.com/user-attachments/assets/ba52f560-d462-4168-b20e-5d6b3022af91)
