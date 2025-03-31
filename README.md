@@ -18,7 +18,7 @@ We provide an overall pipeline in train.py. Now fill in the provided train.py sc
 
 ```
 ### 报告总结
-![生成的文件](https://huihuihenqiang.github.io/article/THPML%20book/report.html)
+[生成的文件](https://huihuihenqiang.github.io/article/THPML%20book/report.html)
 
 
 ## 评估 
