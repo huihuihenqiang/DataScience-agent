@@ -1,4 +1,21 @@
 # DataScience-agent
+
+## 更新计划
+加一个对模型的指令微调。增强其agent能力
+```json
+{
+  "对话历史": ["用户：帮我查明天北京的天气", "模型：调用天气API查询"],
+  "工具调用": {"API": "weather_api", "参数": {"城市": "北京", "日期": "2025-04-02"}},
+}
+
+{
+  "任务": "预订机票",
+  "步骤": [
+    {"子目标": "查询航班", "工具": "flight_search"},
+    {"子目标": "支付", "工具": "payment_gateway"}
+  ]
+}
+```
 ## 基于mcp和garphrag制作的kaggle data science agent
 尽管基于大型语言模型 （LLM） 的agent在自动化数据科学任务方面取得了广泛的成功，以 ![DS-Agent](https://github.com/guosyjlu/DS-Agent)为例，它利用了 LLM agent和基于案例的推理 （CBR），可以灵活地利用 Kaggle 的专业知识，并通过反馈机制促进持续的性能改进。但是，仍然需要人类处理大部分工作（数据提取、数据清洗、网络搜索方法...），agent只负责生成对应的代码。由于最近agent技术取得的巨大的突破，使用mcp和graphrag制作数据科学自动处理的工作流成为可能。
 
